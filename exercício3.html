@@ -11,6 +11,19 @@
 function entrar() {
   document.getElementById("titulo").textContent = "Você entrou na página com sucesso!";
 }
+function entrar() {
+  let titulo = document.getElementById("titulo");
+  titulo.textContent = "Você entrou na página com sucesso!";
+  titulo.style.color = "blue";
+}
+function entrar() {
+  document.getElementById("titulo").textContent = "Você entrou na página com sucesso!";
+  
+  let novoParagrafo = document.createElement("p");
+  novoParagrafo.textContent = "Agora você faz parte da página!";
+  document.body.appendChild(novoParagrafo);
+}
+
 </script>
    </body>
 </html>
