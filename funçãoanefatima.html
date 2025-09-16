@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Exercício 2</title>
+    <title>Verificar Idade</title>
 </head>
 <body>
-   <script src="verificarIdade.js"></script>
-   </body>
+    <h1>Verifique se você é maior de idade</h1>
+    <input type="number" id="idade" placeholder="Digite sua idade">
+    <button onclick="verificar()">Verificar</button>
+
+    <script src="funcaoanefatima.js"></script>
+    <script>
+        function verificar() {
+            const idade = document.getElementById('idade').value;
+            verificarIdade(Number(idade));
+        }
+    </script>
+</body>
 </html>
